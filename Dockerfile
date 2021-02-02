@@ -1,7 +1,7 @@
-FROM java:11
+FROM java:8
 
 EXPOSE 8080
 
-ADD target/api-0.0.1-SNAPSHOT.jar api-0.0.1-SNAPSHOT.jar
+ADD target/api-transbank-0.0.1-SNAPSHOT.jar api-transbank-0.0.1-SNAPSHOT.jar
 
-ENTRYPOINT ["java", "-jar", "api-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "api-transbank-0.0.1-SNAPSHOT.jar"]
